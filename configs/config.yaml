@@ -1,0 +1,13 @@
+source:
+  path: "/home/emma/Videos/traffic-test.mp4"
+
+detection:
+  model: "yolov8n.pt"
+  confidence_threshold: 0.5
+  classes: [2,3,5,7]
+
+
+output:
+  save_frames: true
+  frames_dir: "output/frames"
+  frame_interval: 30
