@@ -1,0 +1,19 @@
+[project]
+name = "edge-traffic-telemetry"
+version = "0.1.0"
+description = "Edge vision pipeline on Jetson Orin Nano: vehicle counting, color classification and speed estimation, measured under latency and power budgets"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.2.6",
+    "onnx>=1.23.0",
+    "onnxsim>=0.7.3",
+    "opencv-python>=5.0.0.93",
+    "paho-mqtt>=2.1.0",
+    "pandas>=2.3.3",
+    "pyyaml>=6.0.3",
+    "ultralytics>=8.4.123",
+]
+
+[tool.ruff]
+line-length = 100
