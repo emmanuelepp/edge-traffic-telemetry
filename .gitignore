@@ -216,3 +216,62 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =============================================================================
+# edge vision / TensorRT / datasets
+# =============================================================================
+
+# Model weights and exported graphs (publish via GitHub Releases instead)
+*.pt
+*.pth
+*.onnx
+*.wts
+weights/
+models/
+
+# TensorRT engines: hardware- and version-specific, not portable
+*.engine
+*.plan
+*.trt
+
+# INT8 calibration caches
+*.calib
+calibration_cache/
+calib/
+
+# Datasets (download scripts live in scripts/)
+data/
+datasets/
+*.tar
+*.tar.gz
+*.zip
+
+# Captured video and frames: may contain plates and faces
+*.mp4
+*.mkv
+*.avi
+*.h264
+*.hevc
+frames/
+clips/
+recordings/
+snapshots/
+
+# Benchmark runs: keep published results, drop intermediate runs
+runs/
+output/
+tegrastats_*.txt
+!results/
+!results/*.csv
+!results/*.json
+!results/*.md
+
+# Local configuration and secrets
+config.local.yaml
+*.pem
+*.key
+credentials.json
+
+# OS
+.DS_Store
+Thumbs.db
